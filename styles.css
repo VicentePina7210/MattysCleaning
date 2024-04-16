@@ -1,17 +1,61 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
 @font-face {
     font-family: "juliusFont";
     src: url("JuliusSansOne-Regular.woff") format("woff");
 }
 
+nav{
+    height: 100px;
+    background-color: #EEF5FF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 200px 0px 25px;
+}
+nav a {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration:none;
+    color: black;
+    font-size: 1.5em;
+    padding: 1.5rem;
+}
+.logo {
+    font-family: "juliusFont", helvetica;
+    font-size: 4em;
+    padding: 0px 0px 0px 3rem;
+
+}
 h1 {
     font-family: "juliusFont", helvetica;
+    font-size: 2em;
+    background-color: #EEF5FF;
 }
-.navbar{
+div h1 {
+    background-color: #9EB8D9;
     display: flex;
-    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    align-content: center;
+    padding-left: 2em;
+    font-family: "juliusFont", helvetica;
+    font-size: 2.5em;
+    max-height: 150px;
     
 }
-.navbar a{
-    padding: 20px;
-    text-decoration: none;
+div h1 img{
+    height: 150px;
+    padding: 0px;
+}
+.topimg {
+    height: 150px;
+    display: flex;
+    justify-content:right;
+    align-items: end;
+    background-color: #9EB8D9;
+    height: 150px;
 }
