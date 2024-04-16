@@ -15,7 +15,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px 200px 0px 25px;
+    padding: 0px 20px 0px 20px;
 }
 nav a {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -26,13 +26,13 @@ nav a {
 }
 .logo {
     font-family: "juliusFont", helvetica;
-    font-size: 4em;
+    font-size: 3.5em;
     padding: 0px 0px 0px 3rem;
 
 }
 h1 {
     font-family: "juliusFont", helvetica;
-    font-size: 2em;
+    font-size: 1em;
     background-color: #EEF5FF;
 }
 div h1 {
@@ -41,9 +41,9 @@ div h1 {
     align-items: center;
     justify-content: space-around;
     align-content: center;
-    padding-left: 2em;
+    text-align: justify;
     font-family: "juliusFont", helvetica;
-    font-size: 2.5em;
+    font-size: 2em;
     max-height: 150px;
     
 }
@@ -58,4 +58,19 @@ div h1 img{
     align-items: end;
     background-color: #9EB8D9;
     height: 150px;
+}
+
+.column-left{
+    float: left;
+    width: 50%;
+    height: 400px;
+    background-color:none ;
+    border-right: 1px solid black;
+
+}
+.column-right{
+    float: right;
+    height: 400px;
+    width: 50%;
+    background-color: none;
 }
