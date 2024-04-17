@@ -17,7 +17,7 @@ nav{
     align-items: center;
     padding: 0px 20px 0px 20px;
 }
-nav a {
+nav a { /*styling the links in the nav bar */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration:none;
     color: black;
@@ -27,50 +27,86 @@ nav a {
 .logo {
     font-family: "juliusFont", helvetica;
     font-size: 3.5em;
-    padding: 0px 0px 0px 3rem;
-
+    padding: 0px 0px 0px 3rem; /* Keeps space between nav and logo */
 }
 h1 {
+    background-color: #EEF5FF;
     font-family: "juliusFont", helvetica;
     font-size: 1em;
-    background-color: #EEF5FF;
 }
 div h1 {
+    max-height: 150px;
     background-color: #9EB8D9;
     display: flex;
     align-items: center;
     justify-content: space-around;
     align-content: center;
-    text-align: justify;
     font-family: "juliusFont", helvetica;
+    text-align: justify;
     font-size: 2em;
-    max-height: 150px;
+
     
 }
-div h1 img{
-    height: 150px;
-    padding: 0px;
-}
+
 .topimg {
     height: 150px;
-    display: flex;
-    justify-content:right;
-    align-items: end;
+    display: flex; /* Keeps the images close together no gaps */
     background-color: #9EB8D9;
-    height: 150px;
 }
 
-.column-left{
+.column-left{ /*rules for top left half of the page */
     float: left;
     width: 50%;
-    height: 400px;
-    background-color:none ;
-    border-right: 1px solid black;
-
-}
-.column-right{
-    float: right;
-    height: 400px;
-    width: 50%;
+    height: 500px;
     background-color: none;
+    border-right: 1px solid black;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; /* Center items horizontally, in this case */
+    align-items: center; /* Vertically center items */
+}
+
+#btn1, #btn2{ /* Styling the buttons, both at once */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    width: 200px;
+    background-color: #9EB8D9;
+    color: black;
+    font-size: 1.5em;
+    padding: 1rem;
+    margin: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.column-right{ /*rules for top right half of the page */
+    float: right;
+    width: 50%;
+    height: 500px;
+    background-color: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#info-1, #info-2{
+    font-family: juliusFont, helvetica;
+    font-size: 2.5em;
+    padding: 1rem;
+}
+.yearsOfExp{ /* Styling for the yearOfExperience circle */
+    font-family: juliusFont, helvetica;
+    font-size: 2em;
+    border: 5px #93bccf solid;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Fixed width */
+    height: 200px; /* Fixed height */
+    padding: 1rem;
 }
