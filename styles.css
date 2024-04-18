@@ -95,8 +95,9 @@ div h1 {
 
 #info-1, #info-2{
     font-family: juliusFont, helvetica;
-    font-size: 2.5em;
-    padding: 1rem;
+    font-size: 2em;
+    padding: 2rem;
+    margin: 0.5em 0;
 }
 .yearsOfExp{ /* Styling for the yearOfExperience circle */
     font-family: juliusFont, helvetica;
@@ -106,7 +107,12 @@ div h1 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 200px; /* Fixed width */
-    height: 200px; /* Fixed height */
+    width: 150px; /* Fixed width */
+    height: 150px; /* Fixed height */
     padding: 1rem;
+}
+.destination{
+    width: 150px;
+    height: 150px;
+    text-wrap: balance;
 }
