@@ -55,11 +55,12 @@ div h1 {
 }
 
 .column-left{ /*rules for top left half of the page */
+    margin-top: 5rem;
     float: left;
     width: 50%;
     height: 500px;
     background-color: none;
-    border-right: 1px solid black;
+    border-right: 6px solid #9EB8D9;
     display: flex; 
     flex-direction: column; 
     justify-content: center; /* Center items horizontally, in this case */
@@ -71,21 +72,23 @@ div h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 200px;
+    height: 150px;
+    width: 350px;
     background-color: #9EB8D9;
     color: black;
-    font-size: 1.5em;
+    font-family: juliusFont, helvetica;
+    font-size: 2em;
+    font-weight: bold;
     padding: 1rem;
-    margin: 1rem;
+    margin: 2rem;
     border: none;
-    border-radius: 5px;
+    border-radius: 3px;
     cursor: pointer;
 }
 .column-right{ /*rules for top right half of the page */
     float: right;
     width: 50%;
-    height: 500px;
+    height: 700px;
     background-color: none;
     display: flex;
     flex-direction: column;
@@ -93,12 +96,21 @@ div h1 {
     align-items: center;
 }
 
-#info-1, #info-2{
+#info-1{
     font-family: juliusFont, helvetica;
-    font-size: 2em;
-    padding: 2rem;
-    margin: 0.5em 0;
+    font-size: 3em;
 }
+.info-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    font-family: juliusFont, helvetica;
+    font-size: 3em;
+    margin:0;
+}
+
 .yearsOfExp{ /* Styling for the yearOfExperience circle */
     font-family: juliusFont, helvetica;
     font-size: 2em;
@@ -107,12 +119,48 @@ div h1 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 150px; /* Fixed width */
-    height: 150px; /* Fixed height */
+    width: 2em; /* Fixed width */
+    height: 2em; /* Fixed height */
     padding: 1rem;
 }
 .destination{
-    width: 150px;
-    height: 150px;
-    text-wrap: balance;
+
+    width: 25%;
+    height: auto;
+
+}
+section{
+    width: 100%;
+    height: auto;
+    background-color: #93bccf;
+    clear: both; /* Start below any floated elements */
+}
+h2{
+    font-family: juliusFont, helvetica;
+    font-size: 4em;
+    padding: 5rem;
+    text-align: center;
+}
+.cleaningBoxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    font-family: juliusFont, helvetica;
+    font-size: 3em;
+    margin:0;
+}
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: aqua;
+    text-align: center;
+}
+.box img{
+    width: 75%;
+    height: 75%;
+}
+.form{
+    clear:both;
 }
