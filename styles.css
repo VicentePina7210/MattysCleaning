@@ -60,7 +60,7 @@ div h1 {
     width: 50%;
     height: 500px;
     background-color: none;
-    border-right: 6px solid #9EB8D9;
+    border-right: 6px double #9EB8D9;
     display: flex; 
     flex-direction: column; 
     justify-content: center; /* Center items horizontally, in this case */
@@ -74,7 +74,7 @@ div h1 {
     align-items: center;
     height: 150px;
     width: 350px;
-    background-color: #9EB8D9;
+    background-color: #D9D9D9;
     color: black;
     font-family: juliusFont, helvetica;
     font-size: 2em;
@@ -124,15 +124,13 @@ div h1 {
     padding: 1rem;
 }
 .destination{
-
     width: 25%;
     height: auto;
-
 }
 section{
     width: 100%;
-    height: auto;
-    background-color: #93bccf;
+    min-height: 900px; /* Keeps the section from being too small on any size screen*/
+    background-color: #9EB8D9;
     clear: both; /* Start below any floated elements */
 }
 h2{
@@ -146,20 +144,30 @@ h2{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     gap: 3rem;
     font-family: juliusFont, helvetica;
+    font-weight: ;
     font-size: 3em;
-    margin:0;
+    margin:1em;
+    padding-bottom: 100px; /* Keeps a gap on the bottom for responsive design*/
 }
 .box{
     width: 400px;
     height: 400px;
-    background-color: aqua;
+    border: solid 5px grey;
+    border-radius: ;
+    background-color: #EEF5FF;
     text-align: center;
+    gap: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .box img{
-    width: 75%;
-    height: 75%;
+    width: 40%; /* Keeps the image size consistent */
+    height: 40%;
 }
 .form{
     clear:both;
