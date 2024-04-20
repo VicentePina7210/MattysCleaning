@@ -127,7 +127,7 @@ div h1 {
     width: 25%;
     height: auto;
 }
-section{
+.info-section{
     width: 100%;
     min-height: 900px; /* Keeps the section from being too small on any size screen*/
     background-color: #9EB8D9;
@@ -169,6 +169,21 @@ h2{
     width: 40%; /* Keeps the image size consistent */
     height: 40%;
 }
+.form-section{
+    width: 100%;
+    min-height: 900px;
+    background-color: grey;
+    clear: both;
+}
 .form{
-    clear:both;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    gap: 3rem;
+    background-color: #93bccf;
+
+}
+.form input{
+    width: 300px;
+    height: 6em;
 }
