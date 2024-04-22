@@ -175,15 +175,32 @@ h2{
     background-color: grey;
     clear: both;
 }
-.form{
+.form {
     display: flex;
     flex-direction: row;
     width: 50%;
     gap: 3rem;
     background-color: #93bccf;
-
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
-.form input{
-    width: 300px;
-    height: 6em;
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    height: 2em; /* Adjusted height */
+}
+
+.form input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #0056b3;
 }
