@@ -9,6 +9,9 @@
     src: url("JuliusSansOne-Regular.woff") format("woff");
 }
 
+html{
+    scroll-behavior: smooth;
+}
 nav{
     height: 100px;
     background-color: #EEF5FF;
@@ -167,16 +170,32 @@ h2{
     width: 40%; /* Keeps the image size consistent */
     height: 40%;
 }
+.services{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: juliusFont, helvetica;
+    font-size: 3em;
+    padding-bottom: 3rem;
+}
+.services-container{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3rem;
+}
+.service-box{
+    width: 300px;
+    height: 400px;
+    background-color: #D9D9D9;
+}
 .form-section{
     width: 100%;
-    min-height: 900px;
+    min-height: inherit;
     background-color: #c5c5c5;
     clear: both;
 }
 .form {
     float: left;
-    display: grid;
-    grid-template-columns: 1fr;
     gap: 1rem;
     width: 50%;
     min-height: 500px;
@@ -184,8 +203,9 @@ h2{
 }
 .input-row{
     display: flex;
-
     justify-content: space-between;
+    padding: 2rem 0rem 0rem 4rem;
+    
 }
 
 /* .form div {
@@ -200,23 +220,34 @@ background-color: antiquewhite;
     gap: 1rem;
 } */
 
-.form div input[type="text"] {
+.input-row input[type="text"] {
     width: 100%;
     height: 100px;
+    background-color: transparent;
+    border: none;
     font-family: juliusFont, helvetica;
-    font-size: 18px; /* Adjust as needed */
+    font-size: 2em; /* Adjust as needed */
     font-weight: bolder;
 }
 
-.submit-button {
-    /* grid-column: span 2; */
+.submit-button{
     display: flex;
     justify-content: center;
-    align-items: center;
+    padding: 1rem 0rem 1rem 0rem;
+}
+.submit-button input[type="submit"]{
+    width: 40%;
+    height: 100px;
+    font-family: juliusFont, helvetica;
+    font-size: 2.5em;
+}
+.submit-button :hover{
+    background-color: #D9D9D9;
+    cursor: pointer;
 }
 .book-again{
     width: 50%;
-    height: 500px;
+    height: 528px;
     background-color: antiquewhite;
     float: right;
     display: flex;
@@ -241,4 +272,13 @@ background-color: antiquewhite;
     font-size: 3em;
     padding: 1rem;
     text-align: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0rem 3rem 0rem;
+    font-family: juliusFont, helvetica;
+    font-size: 4em;
+    width: 100%;
+    height: 900px;
 }
