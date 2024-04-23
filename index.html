@@ -50,27 +50,30 @@
 </div>
 </section>
 <section class = "form-section" >
-<div class = "form">
-    <form action="action_page.php" method="POST"></form>
-    <label for ="fname"></label>
-<div>
-    <input type="text" id="fname" name="fname" placeholder="First name" required>
-    <label for ="lname"></label>
-    <input type="text" id="lname" name="lname" placeholder="Last name" required>
-
-    <label for ="email"></label>
-    <input type="text" id="email" name="Email" placeholder="Email address" required>    
-
-    <label for ="phone"></label>
-    <input type="text" id="phone" name="phone" placeholder="Phone number" required>
-
-    <label for ="address"label>
-    <input type="text" id="address" name="address" placeholder="Full address" required>
-</div>
-<div>
-    <input type="submit">
-</div>
-<div>
+    <form class="form" action="action_page.php" method="POST">
+        <div class = "input-row">
+            <label for="fname"></label>
+            <input type="text" id="fname" name="fname" placeholder="First name" required>
+            
+            <label for="lname"></label>
+            <input type="text" id="lname" name="lname" placeholder="Last name" required>
+        </div>
+        <div class = "input-row">
+            <label for="email"></label>
+            <input type="text" id="email" name="Email" placeholder="Email address" required>    
+    
+            <label for="phone"></label>
+            <input type="text" id="phone" name="phone" placeholder="Phone number" required>
+        </div>
+        <div class = "input-row">
+            <label for="address"></label>
+            <input type="text" id="address" name="address" placeholder="Full address" required>
+        </div>
+        <div class="submit-button">
+            <input type="submit">
+        </div>
+    </form>
+<div class = "book-again">
     <p>Returning Customer?</p>
     <button>Book again</button>
 </div>

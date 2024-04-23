@@ -147,7 +147,6 @@ h2{
     flex-wrap: wrap;
     gap: 3rem;
     font-family: juliusFont, helvetica;
-    font-weight: ;
     font-size: 3em;
     margin:1em;
     padding-bottom: 100px; /* Keeps a gap on the bottom for responsive design*/
@@ -156,7 +155,6 @@ h2{
     width: 400px;
     height: 400px;
     border: solid 5px grey;
-    border-radius: ;
     background-color: #EEF5FF;
     text-align: center;
     gap: 5rem;
@@ -172,35 +170,75 @@ h2{
 .form-section{
     width: 100%;
     min-height: 900px;
-    background-color: grey;
+    background-color: #c5c5c5;
     clear: both;
 }
 .form {
+    float: left;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    width: 50%;
+    min-height: 500px;
+    background-color: #93bccf;
+}
+.input-row{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+/* .form div {
     display: flex;
     flex-direction: row;
-    width: 50%;
-    gap: 3rem;
-    background-color: #93bccf;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
-}
+    flex-wrap: wrap;
+    justify-content: space-around;
+background-color: antiquewhite;
+    align-items: center;
+    padding: 1rem;
+    width: 300px;
+    gap: 1rem;
+} */
 
-.form input {
+.form div input[type="text"] {
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    font-size: 14px;
-    height: 2em; /* Adjusted height */
+    height: 100px;
+    font-family: juliusFont, helvetica;
+    font-size: 18px; /* Adjust as needed */
+    font-weight: bolder;
 }
 
-.form input[type="submit"] {
-    background-color: #007bff;
-    color: white;
+.submit-button {
+    /* grid-column: span 2; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.book-again{
+    width: 50%;
+    height: 500px;
+    background-color: antiquewhite;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-again button{
+    width: 400px;
+    height: 200px;
+    font-family: juliusFont, helvetica;
+    font-size: 3rem;
+}
+.book-again button:hover{
+    background-color: #D9D9D9;
     cursor: pointer;
 }
 
-.form input[type="submit"]:hover {
-    background-color: #0056b3;
+.book-again p {
+    font-family: juliusFont, helvetica;
+    font-size: 3em;
+    padding: 1rem;
+    text-align: center;
 }
