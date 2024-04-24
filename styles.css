@@ -197,6 +197,11 @@ h2{
 .service-box p {
     font-weight: normal;
 }
+.service-img{
+    width: 200px;
+    height: 200px;
+    
+}
 .form-section{
     width: 100%;
     min-height: inherit;
