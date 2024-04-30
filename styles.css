@@ -219,17 +219,20 @@ h2{
 }
 
 .form-section{
+    background-image: url(images/istockphoto-1483911908-612x612.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
     min-height: inherit;
-    background-color: #c5c5c5;
     clear: both;
 }
 .form {
+    background-image: inherit;
     float: left;
     gap: 1rem;
     width: 50%;
     min-height: 500px;
-    background-color: #93bccf;
+
 }
 .input-row{
     display: flex;
@@ -278,7 +281,7 @@ background-color: antiquewhite;
 .book-again{
     width: 50%;
     height: 528px;
-    background-color: antiquewhite;
+    /* background-image: inherit; */
     float: right;
     display: flex;
     flex-direction: column;
