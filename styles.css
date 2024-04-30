@@ -1,5 +1,5 @@
 *{
-    box-sizing: border-box;
+    box-sizing: inherit;
     margin: 0px;
     padding: 0px;
 }
@@ -10,9 +10,14 @@
 }
 
 html{
+    font-size: 16px;
+    box-sizing: border-box;
     scroll-behavior: smooth;
 }
+
 nav{
+    position: fixed; /* Keeps the nav bar at the top of the page */
+    width: 100%; /* Makes the nav bar the full width of the page */
     height: 100px;
     background-color: #EEF5FF;
     display: flex;
@@ -24,18 +29,21 @@ nav a { /*styling the links in the nav bar */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration:none;
     color: black;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     padding: 1.5rem;
 }
 .logo {
+    white-space: nowrap; /* Keeps the logo from wrapping */
     font-family: "juliusFont", helvetica;
-    font-size: 3.5em;
+    font-size: 4em;
     padding: 0px 0px 0px 3rem; /* Keeps space between nav and logo */
+}
+.content-wrapper{
+    padding-top: 100px;
 }
 h1 {
     background-color: #EEF5FF;
     font-family: "juliusFont", helvetica;
-    font-size: 1em;
 }
 div h1 {
     max-height: 150px;
@@ -52,6 +60,8 @@ div h1 {
 }
 
 .topimg {
+    overflow: hidden;
+    max-width: 100%;
     height: 150px;
     display: flex; /* Keeps the images close together no gaps */
     background-color: #9EB8D9;
@@ -101,7 +111,7 @@ div h1 {
 
 #info-1{
     font-family: juliusFont, helvetica;
-    font-size: 3em;
+    font-size: 3vw;
 }
 .info-2{
     display: flex;
@@ -110,7 +120,7 @@ div h1 {
     align-items: center;
     gap: 3rem;
     font-family: juliusFont, helvetica;
-    font-size: 3em;
+    font-size: 3vw;
     margin:0;
 }
 
@@ -170,6 +180,10 @@ h2{
     width: 40%; /* Keeps the image size consistent */
     height: 40%;
 }
+.services-section{ /* Seperates the sections */
+    padding: 5em 0em 5em 0em; 
+    background-color: #ffffff;
+}
 .services{
     display: flex;
     justify-content: center;
@@ -180,6 +194,7 @@ h2{
 }
 .services-container{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding-bottom: 3rem;
 }
@@ -202,6 +217,7 @@ h2{
     height: 200px;
     
 }
+
 .form-section{
     width: 100%;
     min-height: inherit;
@@ -302,9 +318,12 @@ h3{
 }
 .cleaning-crew{
     width: 100%;
+    padding: 0 10em 0 10em;
 }
 .pricing-info{
     width: 50%;
+    padding-right: 5em;
+    font-size: 2.5rem;
 }
 h4{
     display: flex;
@@ -314,7 +333,18 @@ h4{
     font-size: 4em;
     width: 100%;    
 }
-h4 div{
+.about-us{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    width: 40em;
+    height: 15rem;
+    background-color: #EEF5FF;
+    text-align: center;
+    font-size: 2rem;
 }
