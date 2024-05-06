@@ -225,10 +225,13 @@ h2{
     width: 100%;
     min-height: inherit;
     clear: both;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 .form {
-    background-image: inherit;
-    float: left;
+    /* background-image: inherit; */
+    /* float: left; */
     gap: 1rem;
     width: 50%;
     min-height: 500px;
@@ -282,7 +285,7 @@ background-color: antiquewhite;
     width: 50%;
     height: 528px;
     /* background-image: inherit; */
-    float: right;
+    /* float: right; */
     display: flex;
     flex-direction: column;
     justify-content: center;
