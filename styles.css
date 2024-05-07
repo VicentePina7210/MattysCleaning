@@ -140,9 +140,9 @@ div h1 {
     width: 25%;
     height: auto;
 }
-.info-section{
+.whatWeClean-section{
     width: 100%;
-    min-height: 900px; /* Keeps the section from being too small on any size screen*/
+    min-height: 55rem; /* Keeps the section from being too small on any size screen*/
     background-color: #9EB8D9;
     clear: both; /* Start below any floated elements */
 }
@@ -165,8 +165,8 @@ h2{
     padding-bottom: 100px; /* Keeps a gap on the bottom for responsive design*/
 }
 .box{
-    width: 400px;
-    height: 400px;
+    width: 25rem;
+    height: 25rem;
     border: solid 5px grey;
     background-color: #EEF5FF;
     text-align: center;
@@ -189,8 +189,8 @@ h2{
     justify-content: center;
     align-items: center;
     font-family: juliusFont, helvetica;
-    font-size: 3em;
-    padding-bottom: 3rem;
+    font-size: 4em;
+    padding-bottom: 5rem;
 }
 .services-container{
     display: flex;
@@ -202,22 +202,25 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-weight: bold;
-    width: 300px;
-    height: 400px;
-    background-color: #D9D9D9;
-    border: solid 5px grey;
-}                           /*the service p selector overrides the service box font weight
-                              in order to create a bold heading*/
-.service-box p {
-    font-weight: normal;
+
+    width: 30rem;
+    height: 30rem;
+
+}
+.service-title{
+    font-size: 3rem;
+    font-family: juliusFont, helvetica;
+    font-weight: medium;
+    padding-bottom: 1rem;
+}
+.service-box-text{
+    font-size: 1.5rem;
 }
 .service-img{
-    width: 200px;
-    height: 200px;
+    max-width: 30rem;
+    height: 20rem;
     
 }
-
 .form-section{
     background-image: url(images/istockphoto-1483911908-612x612.jpg);
     background-repeat: no-repeat;
@@ -227,6 +230,7 @@ h2{
     clear: both;
     display: flex;
     flex-wrap: wrap;
+    min-height: 55rem;
 
 }
 .form {
@@ -234,7 +238,7 @@ h2{
     /* float: left; */
     gap: 1rem;
     width: 50%;
-    min-height: 500px;
+    min-height: inherit;
 
 }
 .input-row{
@@ -283,7 +287,7 @@ background-color: antiquewhite;
 }
 .book-again{
     width: 50%;
-    height: 528px;
+    height: inherit;
     /* background-image: inherit; */
     /* float: right; */
     display: flex;
@@ -309,6 +313,10 @@ background-color: antiquewhite;
     padding: 1rem;
     text-align: center;
 }
+.pricing-section{
+    border-top: #93bccf solid 5px;
+    border-bottom: #93bccf solid 5px;
+}
 h3{
     display: flex;
     justify-content: center;
@@ -321,6 +329,9 @@ h3{
 .pricing-container{
     display: flex;
     flex-direction: row;
+    font-family: juliusFont, helvetica;
+    max-height: 25em;
+    padding-bottom: 30em;
 }
 .cleaning-crew{
     width: 100%;
@@ -329,7 +340,7 @@ h3{
 .pricing-info{
     width: 50%;
     padding-right: 5em;
-    font-size: 2.5rem;
+    font-size: 3.5vh;
 }
 h4{
     display: flex;
@@ -338,6 +349,9 @@ h4{
     font-family: juliusFont, helvetica;
     font-size: 4em;
     width: 100%;    
+}
+.about-section{
+    padding-bottom: 3em;
 }
 .about-us{
     display: flex;
@@ -353,4 +367,21 @@ h4{
     background-color: #EEF5FF;
     text-align: center;
     font-size: 2rem;
+}
+footer{
+    background-color: #93bccf;
+}
+.footer{
+    display: flex;
+    max-width: 50%;
+    margin: auto; /* Uses the middle 50% of the page */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #EEF5FF;
+
+}
+.footer-item{
+    width: 10rem;
+    height: 10rem;
+    
 }
