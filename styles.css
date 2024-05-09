@@ -179,7 +179,7 @@ h2{
     width: 100%;
 }
 .box{
-    background-image: url(https://source.unsplash.com/random/300x300);
+    background-image: url(https://source.unsplash.com/random/300x300); 
 }
 .box, .back{
     position:absolute; 
