@@ -14,11 +14,13 @@ html{
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-
+body{
+    
+}
 nav{
     position: fixed; /* Keeps the nav bar at the top of the page */
     width: 100%; /* Makes the nav bar the full width of the page */
-    height: 100px;
+    height: 6.25rem; /*6.25 rem is equal to 100px based on the parent size 16px*/
     background-color: #EEF5FF;
     display: flex;
     justify-content: space-between;
@@ -36,17 +38,17 @@ nav a { /*styling the links in the nav bar */
     white-space: nowrap; /* Keeps the logo from wrapping */
     font-family: "juliusFont", helvetica;
     font-size: 4em;
-    padding: 0px 0px 0px 3rem; /* Keeps space between nav and logo */
+    padding: 0rem 0rem 0rem 3rem; /* Keeps space between nav and logo */
 }
 .content-wrapper{
-    padding-top: 100px;
+    padding-top: 6.25rem;
 }
 h1 {
     background-color: #92C7CF;
     font-family: "juliusFont", helvetica;
 }
 div h1 {
-    max-height: 150px;
+    max-height: 9rem;
     background-color: #7ba8db;
     display: flex;
     align-items: center;
@@ -62,7 +64,7 @@ div h1 {
 .topimg {
     overflow: hidden;
     max-width: 100%;
-    height: 150px;
+    height: 9rem;
     display: flex; /* Keeps the images close together no gaps */
     background-color: #9EB8D9;
 }
@@ -71,7 +73,7 @@ div h1 {
     margin-top: 5rem;
     float: left;
     width: 50%;
-    height: 500px;
+    height: 31.25rem;
     background-color: none;
     border-right: 6px double #9EB8D9;
     display: flex; 
@@ -154,7 +156,7 @@ h2{
     text-align: center;
 }
 .cleaningBoxes{
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -163,25 +165,42 @@ h2{
     font-family: juliusFont, helvetica;
     font-size: 3em;
     margin:1em;
-    padding-bottom: 100px; /* Keeps a gap on the bottom for responsive design*/
+    padding-bottom: 100px; Keeps a gap on the bottom for responsive design */
+    width: 300px;
+    height: 300px;
+}
+.card:hover{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.card{
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 .box{
-    width: 25rem;
+    background-image: url(https://source.unsplash.com/random/300x300);
+}
+.box, .back{
+    position:absolute; 
+    width: 100%;
+    height: 100%;
+    /* width: 25rem;
     height: 25rem;
     border: black 10px;
     border-style: ridge;
-    background-color: #EEF5FF;
-    text-align: center;
-    gap: 5rem;
+    background-color: #EEF5FF; */
+    /* text-align: center;
+    /* gap: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    /* justify-content: center; */ 
 }
-.box img{
-    width: 40%; /* Keeps the image size consistent */
+/* .box img{
+    width: 40%; /* Keeps the image size consistent 
     height: 40%;
-}
+} */
 .form-section{
     background-image: url(images/istockphoto-1483911908-612x612.jpg);
     background-repeat: no-repeat;
@@ -200,7 +219,7 @@ h2{
     gap: 1rem;
     width: 50%;
     min-height: inherit;
-    padding: 10rem 5rem 0rem;
+    padding: 10rem 5rem 0rem 0rem;
 }
 .input-row{
     display: flex;
@@ -357,12 +376,19 @@ h4{
     justify-content: center;
     align-items: center;
 }
+h5{
+    font-size: 7.5vh;
+    padding: 1rem 0rem 2rem;
+}
 .about{
-    width: 40em;
+    width: 50%;
     height: 15rem;
     background-color: #EEF5FF;
     text-align: center;
-    font-size: 2rem;
+    border: #7ba8db 5px groove;
+}
+.about-text{
+    font-size:3.5vh ;
 }
 footer{
     background-color: #93bccf;
@@ -380,4 +406,39 @@ footer{
     width: 10rem;
     height: 10rem;
     
+}
+
+
+
+
+.container{
+    width: 300px;
+    height: 300px;
+}
+.card1{
+    width: 100%;
+    height: 100%;
+    background-color: #7ba8db;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+}
+.container:hover > .card1{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+
+.front1,
+.back1{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+}
+.front1{
+    background-image: url(https://source.unsplash.com/random/300x300);
+}
+.back1{
+    background-color: white;
+    transform: rotateY(180deg);
 }
