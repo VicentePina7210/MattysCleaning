@@ -26,6 +26,12 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px 0px 20px;
+    z-index: 1000; /* Keeps the nav bar on top of everything else */
+}
+.logo-img{
+    width: 70px;
+    transform: rotateY(180deg);
+    mix-blend-mode: multiply;
 }
 nav a { /*styling the links in the nav bar */
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -156,7 +162,7 @@ h2{
     text-align: center;
 }
 .cleaningBoxes{
-    /* display: flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
@@ -165,42 +171,61 @@ h2{
     font-family: juliusFont, helvetica;
     font-size: 3em;
     margin:1em;
-    padding-bottom: 100px; Keeps a gap on the bottom for responsive design */
-    width: 300px;
-    height: 300px;
+    padding-bottom: 100px; /* Keeps a gap on the bottom for responsive design*/
 }
-.card:hover{
+.card{
+    width: 25rem;
+    height: 25rem;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+
+}
+.card:hover {
     cursor: pointer;
     transform: rotateY(180deg);
 }
-.card{
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-.box{
-    background-image: url(https://source.unsplash.com/random/300x300); 
-}
-.box, .back{
-    position:absolute; 
+.front,
+.back{
     width: 100%;
     height: 100%;
-    /* width: 25rem;
-    height: 25rem;
+    backface-visibility: hidden;
+    position: absolute;
+    border: black ridge 10px;
+}
+.back{
+    background-color: #EEF5FF;
+    transform: rotateY(180deg);
+
+}
+.back img{
+    width: 120px;
+    mix-blend-mode: multiply;
+    display: block;
+    margin: 0 auto;
+}
+.front{
+    width: 100%;
     border: black 10px;
     border-style: ridge;
-    background-color: #EEF5FF; */
-    /* text-align: center;
-    /* gap: 5rem;
+    background-color: #EEF5FF;
+    text-align: center;
+    gap: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */ 
+    justify-content: center;
 }
-/* .box img{
-    width: 40%; /* Keeps the image size consistent 
+.front img{
+    width: 40%; /* Keeps the image size consistent */
     height: 40%;
-} */
+}
+.card-text{
+    font-size: 1.5rem;
+    font-family: helvetica;
+    padding: 1.5rem;
+
+}
 .form-section{
     background-image: url(images/istockphoto-1483911908-612x612.jpg);
     background-repeat: no-repeat;
@@ -214,12 +239,11 @@ h2{
 
 }
 .form {
-    /* background-image: inherit; */
-    /* float: left; */
+    float: left;
     gap: 1rem;
     width: 50%;
     min-height: inherit;
-    padding: 10rem 5rem 0rem 0rem;
+    padding: 5rem 5rem 0rem 0rem;
 }
 .input-row{
     display: flex;
@@ -261,6 +285,9 @@ h2{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
+    padding-bottom: 9em;
+
 }
 
 .book-again button{
@@ -386,6 +413,7 @@ h5{
     background-color: #EEF5FF;
     text-align: center;
     border: #7ba8db 5px groove;
+    overflow:hidden;
 }
 .about-text{
     font-size:3.5vh ;
@@ -407,11 +435,7 @@ footer{
     height: 10rem;
     
 }
-
-
-
-
-.container{
+/* .container{
     width: 300px;
     height: 300px;
 }
@@ -441,4 +465,4 @@ footer{
 .back1{
     background-color: white;
     transform: rotateY(180deg);
-}
+} */

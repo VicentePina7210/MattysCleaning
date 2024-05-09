@@ -11,7 +11,9 @@
 
 <body> 
     <nav>
-        <div class = "logo">Mattys Cleaning</div>
+        <div class = "logo">Mattys Cleaning
+            <img class = "logo-img"src="images/R.jpg" alt="">
+        </div>
         <div class = "nav-items">
             <a href="#home">Home</a>
             <a href="#whatWeClean">What we clean</a>
@@ -48,26 +50,47 @@
 </h2>
 <div class = "cleaningBoxes">
     <div class = "card">
-    <div class = "box" id = "box 1">
-        <!-- <img src="images/house.png" alt="Icon of a house"> -->
+        <div class = "front" id = "box 1">Residential
+            <img src="images/house.png" alt="Icon of a house">
         </div>
-        <div class = "back"> This is the back 
-
+        <div class = "back">
+            <p class = "card-text">Residential cleaning includes homes and living spaces.
+                Most people who require our services fall under this category.
+                These people include homeowners, renters, or landlords.
+            </p>
+            <img src="images/R.jpg" alt="Matty's Cleaning logo">
         </div>
     </div>
 
+    <div class = "card">
+        <div class = "front" id = "box 2"> Commercial
+            <img src="images/building.png" alt="Icon of a building">
+        </div>
+        <div class = "back">  
+            <p class = "card-text">Commercial cleaning includes entire apartment buildings
+                and working spaces such as offices. These spaces are usually larger and 
+                require more time and effort to clean.
+            </p>
+            <img src="images/R.jpg" alt="Matty's Cleaning logo">
+        </div>
+    </div>
+    
+    <div class = "card">
+        <div class = "front" id = "box 3">Commerce
+            <img src="images/store.png" alt="Icon of a store">
+        </div>
+        <div class = "back">  
+            <p class = "card-text"> Commerce cleaning is for commerce business owners
+                who need their stores cleaned. This includes small businesses and stores.
+            </p>
+            <img src="images/R.jpg" alt="Matty's Cleaning logo">
+        </div>
+    </div>
 </div>
-<!-- 
-    <div class = "box" id = "box 2"> Commercial
-        <img src="images/building.png" alt="Icon of a building">
-    </div>
-    <div class = "box" id = "box 3">Commerce
-        <img src="images/store.png" alt="Icon of a store">
-    </div>
-</div> -->
 
 </section>
 <section id = "form-section" class = "form-section" >
+    <h3>Book with us</h3>
     <form class="form" action="action_page.php" method="POST">
         <div class = "input-row">
             <label for="fname"></label>
