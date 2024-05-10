@@ -6,7 +6,7 @@
      </Title>
      <meta charset="utf-8">
      <link rel="stylesheet" href="styles.css">
-     <script> src = "interactive.js" </script>
+
 </Head>
 
 <body> 
@@ -91,7 +91,7 @@
 </section>
 <section id = "form-section" class = "form-section" >
     <h3>Book with us</h3>
-    <form class="form" action="action_page.php" method="POST">
+    <form class="form" onsubmit="sendEmail(); alert('Hello, world!')">
         <div class = "input-row">
             <label for="fname"></label>
             <input type="text" id="fname" name="fname" placeholder="First name" required>
@@ -208,6 +208,8 @@
 </div>
 
 
+<script src = "https://smtpjs.com/v3/smtp.js"> </script>
+<script src = "/script.js"> </script>
 </body>
 
 <footer>
