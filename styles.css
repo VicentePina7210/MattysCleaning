@@ -129,7 +129,7 @@ div h1 {
     opacity: 1;
     transform: scale(1,1);
 }
-/* #btn1, #btn2{ 
+#btn1, #btn2{ 
     position: relative;
     display: flex;
     flex-direction: column;
@@ -148,7 +148,7 @@ div h1 {
     border: none;
     border-radius: 3px;
     cursor: pointer;
-} */
+} 
 
 .column-right{ /*rules for top right half of the page */
     float: right;
@@ -372,11 +372,11 @@ h2{
     align-items: center;
     padding-bottom: 5rem;
 }
+
 .service-box{
     display: flex;
     flex-direction: column;
-    align-items: center;
-
+    align-items: center; 
     width: 30rem;
     height: 30rem;
 
@@ -389,6 +389,7 @@ h2{
 }
 .service-box-text{
     font-size: 1.5rem;
+    padding-top:1rem;
 }
 .service-img{
     max-width: 40rem;
@@ -414,7 +415,6 @@ h3{
 .pricing-container{
     display: flex;
     flex-direction: row;
-    font-family: juliusFont, helvetica;
     max-height: 25em;
     padding-bottom: 30em;
 }
@@ -447,7 +447,7 @@ h4{
     align-items: center;
 }
 h5{
-    font-size: 7.5vh;
+    font-size: 3em;
     padding: 1rem 0rem 2rem;
 }
 .about{
@@ -459,7 +459,9 @@ h5{
     overflow:hidden;
 }
 .about-text{
-    font-size:3.5vh ;
+    font-size: 2.5vh ;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 footer{
     background-color: #93bccf;
