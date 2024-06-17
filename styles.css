@@ -211,10 +211,10 @@ h2{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 3rem; 
     font-family: juliusFont, helvetica;
     font-size: 3em;
-    margin:1em;
+    
 }
 .card{
     width: 25rem;
@@ -392,8 +392,8 @@ h2{
     padding-top:1rem;
 }
 .service-img{
-    max-width: 40rem;
-    max-height: 30rem;
+    max-width: 90vh;
+    max-height: 80vh;
     border: black 10px;
     border-style: ridge;
     
