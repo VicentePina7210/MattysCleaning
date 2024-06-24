@@ -23,12 +23,12 @@
     </nav>
 
 <div id = "home" class = "content-wrapper">
- <div>
+ <!-- <div>
      <h1>A clean space is a happy space
         <div class ="topimg">
             <img src="images/image-asset.jpg" alt="Image of a counter top being cleaned">
             <img src="images/cleanbucket.jpg" alt="Image of a cleaning bucket">
-            <img src="images/mop.jpg" alt="Image of a mop">
+            <img src="images/mop.jpg" alt="Image of a mop"> -->
         </div>
 </div>
     </h1>
@@ -44,6 +44,20 @@
     <div class ="info-2">Anywhere you<br>need us<img class = "destination" src="images/destination.png" alt="image of a map"></div>
 </div>
  
+<section class = "review-section">
+    <div class = "review-bar-container">
+        <img class = "arrows" src="images/left-arrow.png" alt="">
+    <div class = "review-bar">
+        <div class = "customer-review" id = "review-1"> This is review #1</div>
+        <div class = "customer-review" id = "review-2">This is review #2</div>
+        <div class = "customer-review" id = "review-3">This is review #3</div>
+        <div class = "customer-review" id = "review-4">This is review #4</div>
+        <div class = "customer-review" id = "review-5">This is review #5</div>
+    </div>
+    <img class = "arrows" src="images/right-arrow.png" alt="">
+    </div>
+</section>
+
 <section id = "whatWeClean" class="whatWeClean-section">
 <h2 id="whatWeClean-heading">
     What we clean
@@ -91,7 +105,7 @@
 </section>
 <section id = "form-section" class = "form-section" >
     <h3>Book with us</h3>
-    <form class="form" onsubmit="sendEmail(); alert('Hello, world!')">
+    <form action = "#" class="form" >
         <div class = "input-row">
             <label for="fname"></label>
             <input type="text" id="fname" name="fname" placeholder="First name" required>
@@ -211,6 +225,8 @@
 <script src = "https://smtpjs.com/v3/smtp.js"> </script>
 <script src = "/script.js"> </script>
 </body>
+
+
 
 <footer>
     <div class = "footer">
