@@ -231,6 +231,7 @@ div h1 {
 .whatWeClean-section{
     width: 100%;
     min-height: 55rem; /* Keeps the section from being too small on any size screen*/
+    padding-bottom: 100px;
     background-color: #9EB8D9;
     clear: both; /* Start below any floated elements */
 }
@@ -246,11 +247,10 @@ h2{
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 3rem; 
     font-family: juliusFont, helvetica;
     font-size: 3em;
-    margin:1em;
-    padding-bottom: 100px; /* Keeps a gap on the bottom for responsive design*/
+    
 }
 .card{
     width: 25rem;
@@ -428,8 +428,8 @@ h2{
     padding-top:1rem;
 }
 .service-img{
-    max-width: 40rem;
-    max-height: 30rem;
+    max-width: 90vh;
+    max-height: 80vh;
     border: black 10px;
     border-style: ridge;
     
