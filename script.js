@@ -1,18 +1,24 @@
-//example of sending the email with the api
-// function sendEmail() {
-//     Email.send({
-// Host : "smtp.elasticemail.com",
-// Username : "username",
-// Password : "password",
-// To : 'them@website.com',
-// From : "you@isp.com",
-// Subject : "This is the subject",
-// Body : "And this is the body"
-// }).then(
-// message => alert(message)
-// );
-// }
 
+let scrollContainer = document.querySelector(".review-bar");
+let arrowLeft = document.getElementById("arrowLeft");
+let arrowRight = document.getElementById("arrowRight");
+
+
+
+scrollContainer.addEventListener("wheel", (evt) => {
+    evt.preventDefault();
+    scrollContainer.scrollLeft += evt.deltaY;
+
+});
+
+arrowRight.addEventListener("click", ()=>{
+    scrollContainer.scrollLeft += 900;
+});
+
+arrowLeft.addEventListener("click", ()=>{
+    scrollContainer.scrollLeft -= 900;
+});
+//the rest of the code is for handling the email API
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');
 const email = document.getElementById('email');

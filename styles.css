@@ -194,7 +194,14 @@ div h1 {
     height: auto;
 }
 .review-section{
+    padding-bottom: 8rem;
   
+}
+.arrowLeft:hover, .arrowRight:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 .review-bar::-webkit-scrollbar{
     display: none;
@@ -204,11 +211,11 @@ div h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 60%;
+    width: 40%;
     margin: auto;
 
 }
-.arrows{
+.arrowLeft, .arrowRight{
     width: 4rem;
 }
 .review-bar{
@@ -218,15 +225,21 @@ div h1 {
     width: 100%;
     overflow: scroll;
     margin: auto;
-    gap: 3rem;
+    gap: 20rem;
+    padding-left: 20%;
+    padding-right: 20%;
 
 
 }
 .customer-review{
-    width: 16em;
-    height: 12em;
+    width: 20em;
+    height: 20em;
     display: flex;
     background-color:black ;
+}
+.customer-review:hover{
+    transform: scale(1.3);
+    transition: transform 0.5s;
 }
 .whatWeClean-section{
     width: 100%;
