@@ -6,6 +6,8 @@
      </Title>
      <meta charset="utf-8">
      <link rel="stylesheet" href="styles.css">
+     <link rel="stylesheet" href="swiper-bundle.min.css" />
+     
      <script src = "https://smtpjs.com/v3/smtp.js"> </script>
 </Head>
 
@@ -43,20 +45,38 @@
     <p id="info-1"><span class = "yearsOfExp">30+</span> years of experience</p>
     <div class ="info-2">Anywhere you<br>need us<img class = "destination" src="images/destination.png" alt="image of a map"></div>
 </div>
- 
-<section class = "review-section">
-    <div class = "review-bar-container">
-        <img class = "arrowLeft" id = "arrowLeft" src="images/left-arrow.png" alt="">
-    <div class = "review-bar">
-        <div class = "customer-review" id = "review-1"> This is review #1</div>
-        <div class = "customer-review" id = "review-2">This is review #2</div>
-        <div class = "customer-review" id = "review-3">This is review #3</div>
-        <div class = "customer-review" id = "review-4">This is review #4</div>
-        <div class = "customer-review" id = "review-5">This is review #5</div>
+<section class="review-section">
+    <div class="container testimonial mySwiper">
+      <div class="testi-content swiper-wrapper">
+        <div class="slide swiper-slide">
+          <img src="images/simpleicon.jpg" alt="" class="image" />
+          <p>
+            "Great service! Highly recommended."
+          </p>
+          <i class="quote-icon"><img src="images/quoteicon.png" alt=""></i>
+          <div class="details">
+            <span class="name">John Doe</span>
+            <span class="job">Software Engineer</span>
+          </div>
+        </div>
+        <div class="slide swiper-slide">
+          <img src="images/simpleicon2.jpg" alt="" class="image" />
+          <p>
+            "Amazing support and fast response!"
+          </p>
+          <i class="quote-icon"><img src="images/quoteicon.png" alt=""></i>
+          <div class="details">
+            <span class="name">Jane Smith</span>
+            <span class="job">UI Designer</span>
+          </div>
+        </div>
+        <!-- Add more testimonials as needed -->
+      </div>
+      <div class="swiper-button-next nav-btn"></div>
+      <div class="swiper-button-prev nav-btn"></div>
+      <div class="swiper-pagination"></div>
     </div>
-    <img class = "arrowRight" id = "arrowRight" src="images/right-arrow.png" alt="">
-    </div>
-</section>
+  </section>
 
 <section id = "whatWeClean" class="whatWeClean-section">
 <h2 id="whatWeClean-heading">
@@ -227,7 +247,23 @@
 
 
 
+<script src="/swiper-bundle.min.js"></script>
 <script src = "/script.js"> </script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      grabCursor: true,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 

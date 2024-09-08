@@ -2,6 +2,11 @@ import winsound
 
 fr = 1000
 
-d = 200
+d = 500
 
-winsound.Beep(fr, d)
+
+
+sounds = winsound.Beep(fr, d)
+x = 5
+for x in sounds:
+    sounds

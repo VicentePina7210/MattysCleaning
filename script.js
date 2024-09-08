@@ -1,23 +1,28 @@
-
-let scrollContainer = document.querySelector(".review-bar");
-let arrowLeft = document.getElementById("arrowLeft");
-let arrowRight = document.getElementById("arrowRight");
-
-
-
-scrollContainer.addEventListener("wheel", (evt) => {
-    evt.preventDefault();
-    scrollContainer.scrollLeft += evt.deltaY;
-
-});
-
-arrowRight.addEventListener("click", ()=>{
-    scrollContainer.scrollLeft += 900;
-});
-
-arrowLeft.addEventListener("click", ()=>{
-    scrollContainer.scrollLeft -= 900;
-});
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    grabCursor: true,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+  
+  // Optionally, you can randomize testimonials by shuffling them on page load
+  function shuffleTestimonials() {
+    let slides = document.querySelectorAll('.swiper-slide');
+    for (let i = slides.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      slides[i].parentNode.insertBefore(slides[j], slides[i].nextSibling);
+    }
+  }
+  
+  document.addEventListener("DOMContentLoaded", shuffleTestimonials);
+  
 //the rest of the code is for handling the email API
 const fname = document.getElementById('fname');
 const lname = document.getElementById('lname');

@@ -3,6 +3,7 @@
     margin: 0px;
     padding: 0px;
 }
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 @font-face {
     font-family: "juliusFont";
@@ -193,54 +194,106 @@ div h1 {
     width: 25%;
     height: auto;
 }
-.review-section{
-    padding-bottom: 8rem;
-  
-}
-.arrowLeft:hover, .arrowRight:hover{
-    filter: grayscale(0);
-    cursor: pointer;
-    transform: scale(1.1);
-    transition: transform 0.5s;
-}
-.review-bar::-webkit-scrollbar{
-    display: none;
-}
-.review-bar-container{
-    clear: both;
+.container {
+    height: 80vh;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40%;
-    margin: auto;
-
-}
-.arrowLeft, .arrowRight{
-    width: 4rem;
-}
-.review-bar{
+    background-color: #f9f9f9;
+  }
+  
+  .testimonial {
     clear: both;
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    position: relative;
+    max-width: 900px;
     width: 100%;
-    overflow: scroll;
-    margin: auto;
-    gap: 20rem;
-    padding-left: 20%;
-    padding-right: 20%;
-
-
+    padding: 50px 0;
+    overflow: hidden;
+    margin: 0 auto;
+  }
+  
+  .testimonial .image {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .quote-icon img {
+    width: 5vh;  /* Set your desired width */
+    height: 5vhpx; /* Set your desired height */
+    display: block; /* Ensure the image is displayed as a block element */
 }
-.customer-review{
-    width: 20em;
-    height: 20em;
+  .testimonial .slide {
     display: flex;
-    background-color:black ;
-}
-.customer-review:hover{
-    transform: scale(1.3);
-    transition: transform 0.5s;
-}
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  
+  .slide p {
+    text-align: center;
+    padding: 0 160px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+  }
+  
+  .slide .quote-icon {
+    font-size: 30px;
+    color: #4070f4;
+  }
+  
+  .details .name {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .details .job {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+  }
+  
+  /* Swiper button CSS */
+  .nav-btn {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    transform: translateY(30px);
+    background-color: rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+  }
+  
+  .nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-btn::after,
+  .nav-btn::before {
+    font-size: 20px;
+    color: #fff;
+  }
+  
+  .swiper-pagination-bullet {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  .swiper-pagination-bullet-active {
+    background-color: #4070f4;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .slide p {
+      padding: 0 20px;
+    }
+  
+    .nav-btn {
+      display: none;
+    }
+  }
 .whatWeClean-section{
     width: 100%;
     min-height: 55rem; /* Keeps the section from being too small on any size screen*/
